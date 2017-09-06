@@ -9,3 +9,5 @@ mock
 zappa
 alembic
 pyramid
+pyramid_debugtoolbar
+webtest

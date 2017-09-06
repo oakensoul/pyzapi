@@ -33,3 +33,12 @@
         requirements: /vagrant/requirements.txt
         virtualenv: /home/vagrant/python3.6
         virtualenv_python: python3.6
+
+    - name: Recursively Update Permissions to our Virtualenv so it is owned by Vagrant
+      become: yes
+      file:
+        path: /home/vagrant/python3.6
+        state: directory
+        owner: vagrant
+        group: vagrant
+        recurse: yes
