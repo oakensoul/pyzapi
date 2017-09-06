@@ -30,6 +30,6 @@
 
     - name: Install PIP requirements
       pip:
-        requirements: /vagrant/ansible/pip-requirements.txt
+        requirements: /vagrant/requirements.txt
         virtualenv: /home/vagrant/python3.6
         virtualenv_python: python3.6

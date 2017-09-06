@@ -7,3 +7,5 @@ pytest
 nose
 mock
 zappa
+alembic
+pyramid
