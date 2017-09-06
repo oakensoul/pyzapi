@@ -10,4 +10,5 @@ zappa
 alembic
 pyramid
 pyramid_debugtoolbar
+pyramid_chameleon
 webtest

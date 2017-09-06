@@ -15,13 +15,13 @@ class TutorialViewTests(unittest.TestCase):
 
         request = testing.DummyRequest()
         response = home(request)
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Visit', response.body)
+
+        self.assertEqual('Home View', response['name'])
 
     def test_hello(self):
         from .views import hello
 
         request = testing.DummyRequest()
         response = hello(request)
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Go back', response.body)
+
+        self.assertEqual('Hello View', response['name'])

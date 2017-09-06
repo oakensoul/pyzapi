@@ -11,8 +11,8 @@ class TutorialFunctionalTests(unittest.TestCase):
 
     def test_home(self):
         res = self.test_app.get('/', status=200)
-        self.assertIn(b'<body>Visit', res.body)
+        self.assertIn(b'<h1>Hi Home View', res.body)
 
     def test_hello(self):
         res = self.test_app.get('/howdy', status=200)
-        self.assertIn(b'<body>Go back', res.body)
+        self.assertIn(b'<h1>Hi Hello View', res.body)
