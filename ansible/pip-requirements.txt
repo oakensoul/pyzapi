@@ -3,3 +3,7 @@ awscli
 requests
 pytz
 iso8601
+pytest
+nose
+mock
+zappa
